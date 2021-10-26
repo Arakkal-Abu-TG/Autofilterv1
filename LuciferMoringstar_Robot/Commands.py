@@ -18,10 +18,10 @@ LOG_CHANNEL = BROADCAST_CHANNEL
 db = Database(DB_URL, SESSION)
 
 PHOTO = [
-    "https://telegra.ph/file/2e11d66dd5b61aabc6747.jpg",
-    "https://telegra.ph/file/2ebbd10c905d0e031f4dc.jpg",
-    "https://telegra.ph/file/9567cfe30d2f702ad22d8.jpg",
-    "https://telegra.ph/file/81f3c0c3d5d08f2db0c48.jpg"
+    "https://telegra.ph/file/5e9585ead3d2ad4a8b7b0.jpg",
+    "https://telegra.ph/file/48e5a906ee0e6b0e9e021.jpg",
+    "https://telegra.ph/file/409499491280bdf475e46.jpg",
+    "https://telegra.ph/file/be8c685b8300bdd61ad42.jpg"
 ]
 
 
@@ -93,7 +93,7 @@ async def start(bot, message):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('❤️ Thanks for using meh !! ❤️', url=f'https://t.me/housefull_links')
+                        InlineKeyboardButton('❤️ Thanks for using me !! ❤️', url=f'https://t.me/EDIT_REPO')
                     ]
                     ]
                 await bot.send_cached_media(
@@ -124,12 +124,12 @@ async def start(bot, message):
             parse_mode="Markdown",
             reply_markup=InlineKeyboardMarkup(
                 [[
-                InlineKeyboardButton("➕ Add to group ➕", url="http://t.me/fbm_autofilterbot?startgroup=true")
+                InlineKeyboardButton("➕ Add to group ➕", url="http://t.me/addmetoyourgroupa")
                 ],[ 
                 InlineKeyboardButton("🔍 Search Here", switch_inline_query_current_chat=''),
                 InlineKeyboardButton("❔ Help", callback_data="help")
                 ],[
-                InlineKeyboardButton("🤖 Updates", url="https://t.me/housefull_links"),
+                InlineKeyboardButton("🤖 Updates", url="https://t.me/mmupdateschannel"),
                 InlineKeyboardButton("☺️ About", callback_data="about")
                 ]]
             )
@@ -342,7 +342,7 @@ async def bot_info(bot, message):
     buttons = [
         [
             
-            InlineKeyboardButton('❤️ Thanks For Using Me ❤️', url=f'https://t.me/housefull_links')
+            InlineKeyboardButton('❤️ Thanks For Using Me ❤️', url=f'https://t.me/EDIT_REPO')
         ]
         ]
     await message.reply(text=f"{ABOUT}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
