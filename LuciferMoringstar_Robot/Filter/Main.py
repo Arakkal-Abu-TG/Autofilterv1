@@ -53,7 +53,7 @@ async def filter(client, message):
     if 2 < len(message.text) < 100:    
         btn = []
         search = message.text
-        mo_tech_yt = f"**🗂️ Title:** {search}\n**⭐ Rating:** {random.choice(RATING)}\n**🎭 Genre:** {random.choice(GENRES)}\n**🤵Asked By:**[{cmd.from_user.first_name}](tg://user?id={cmd.from_user.id})📤/n**Uploaded by {message.chat.title}**"
+        mo_tech_yt = f"**🗂️ Title:** {search}\n**⭐ Rating:** {random.choice(RATING)}\n**🎭 Genre:** {random.choice(GENRES)}\n**🤵Asked By:** [inline mention of a user](tg://user?id=123456789)/n**📤Uploaded by {message.chat.title}**"
         files = await get_filter_results(query=search)
         if files:
             for file in files:
@@ -115,7 +115,7 @@ async def group(client, message):
     if 2 < len(message.text) < 50:    
         btn = []
         search = message.text
-        mo_tech_yt = f"**🗂️ Title:** {search}\n**⭐ Rating:** {random.choice(RATING)}\n**🎭 Genre:** {random.choice(GENRES)}\n**📤 Uploaded by {message.chat.title}**"
+        mo_tech_yt = f"**🗂️ Title:** {search}\n**⭐ Rating:** {random.choice(RATING)}\n**🎭 Genre:** {random.choice(GENRES)}\n**🤵Asked by:** [inline mention of a user](tg://user?id=123456789)/n**📤 Uploaded by {message.chat.title}**"
         nyva=BOT.get("username")
         if not nyva:
             botusername=await client.get_me()
@@ -297,7 +297,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "help":
             buttons = [
                 [
-                    InlineKeyboardButton('Dev 🤦', url=f'https://t.me/paulwalkerassitbot')
+                    InlineKeyboardButton('Dev 🤦', url=f'https://t.me/Arakkal_Abu_TG')
                 ]
                 ]
             await query.message.edit(text=f"{HELP}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
@@ -305,7 +305,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "about":
             buttons = [
                 [
-                    InlineKeyboardButton('Updates', url=f'https://t.me/housefull_links')
+                    InlineKeyboardButton('Updates', url=f'https://t.me/mmupdateschannel')
                 ]
                 ]
             await query.message.edit(text=f"{ABOUT}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
@@ -328,7 +328,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('❤️ Join ❤️', url=f'https://t.me/fbm_cinema')
+                        InlineKeyboardButton('❤️ Join ❤️', url=f'https://t.me/MarchMoviesGroup')
                     ]
                     ]
                 
@@ -341,7 +341,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     )
         elif query.data.startswith("checksub"):
             if AUTH_CHANNEL and not await is_subscribed(client, query):
-                await query.answer("If your are smart i am your dad 😒",show_alert=True)
+                await query.answer("ആഹഹ എന്നിട്ട് ഒന്ന് പോടാ ചെറുക്ക/nIf your are smart i am your dad 😒",show_alert=True)
                 return
             ident, file_id = query.data.split("#")
             filedetails = await get_file_details(file_id)
@@ -359,7 +359,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{title}"
                 buttons = [
                     [
-                        InlineKeyboardButton('🤔 Support 🤔', url=f'https://t.me/hf_links')
+                        InlineKeyboardButton('🤔 Support 🤔', url=f'https://t.me/EDIT_REPO')
                     ]
                     ]
                 
@@ -375,4 +375,4 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "pages":
             await query.answer()
     else:
-        await query.answer("മിസ്റ്റർ ഇത് തനിക്ക് ഉള്ളത് അല്ല 🤭",show_alert=True)
+        await query.answer("മിസ്റ്റർ ഇത് തനിക്ക് ഉള്ളത് അല്ല മോനുസേ/nRequest Your Own And Get The Movies",show_alert=True)
