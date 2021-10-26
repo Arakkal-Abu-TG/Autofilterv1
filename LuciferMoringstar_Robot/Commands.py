@@ -121,7 +121,7 @@ async def start(bot, message):
     	await message.reply_photo(
             photo=f"{random.choice(PHOTO)}",
             caption=START_MSG.format(message.from_user.mention),
-            parse_mode="Markdown",
+            parse_mode="HTML",
             reply_markup=InlineKeyboardMarkup(
                 [[
                 InlineKeyboardButton("➕ Add to group ➕", url="http://t.me/addmetoyourgroupa")
@@ -346,3 +346,6 @@ async def bot_info(bot, message):
         ]
         ]
     await message.reply(text=f"{ABOUT}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+START_TXT = """Hi,{} സുഖം അല്ലേ.
+
+ഹലോ മച്ചാനെ ഞാൻ [മാർച്ച്‌ മൂവിസ്](https://t.me/MarchMoviesGroup) മാത്രമേ സപ്പോർട്ട് ആവുകയുള്ളൂ. എന്തായാലും ഇവിടം വരെ വന്നതല്ലേ ഞങ്ങളുടെ ചാനലിൽ ജോയിൻ ആയില്ലെങ്കിൽ ജോയിൻ ആയിക്കോ.
