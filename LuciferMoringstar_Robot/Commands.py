@@ -124,13 +124,15 @@ async def start(bot, message):
             parse_mode="HTML",
             reply_markup=InlineKeyboardMarkup(
                 [[
-                InlineKeyboardButton("➕ Add to group ➕", url="http://t.me/addmetoyourgroupa")
+                InlineKeyboardButton("➕ Join our group ➕", url="http://t.me/MarchMoviesGroup")
                 ],[ 
                 InlineKeyboardButton("🔍 Search Here", switch_inline_query_current_chat=''),
                 InlineKeyboardButton("❔ Help", callback_data="help")
                 ],[
                 InlineKeyboardButton("🤖 Updates", url="https://t.me/mmupdateschannel"),
                 InlineKeyboardButton("☺️ About", callback_data="about")
+                ],[
+                InlineKeyboardButton("💢Join our codes Group💢", url="https://t.me/EDIT_REPO")
                 ]]
             )
         )
@@ -346,7 +348,7 @@ async def bot_info(bot, message):
         ]
         ]
     await message.reply(text=f"{ABOUT}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
-START_TXT = """Hi,{} സുഖം അല്ലേ.
 
-ഹലോ മച്ചാനെ ഞാൻ മാർച്ച് മൂവീസിൽ വർക്ക് ആകു. എന്തായാലും ഇവിടം വരെ വന്നതല്ലേ ഞങ്ങളുടെ ചാനലിൽ ജോയിൻ ആയില്ലെങ്കിൽ ജോയിൻ ആയിക്കോ."""
+
+
 
