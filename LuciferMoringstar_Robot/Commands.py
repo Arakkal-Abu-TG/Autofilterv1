@@ -348,4 +348,5 @@ async def bot_info(bot, message):
     await message.reply(text=f"{ABOUT}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 START_TXT = """Hi,{} സുഖം അല്ലേ.
 
-ഹലോ മച്ചാനെ ഞാൻ [മാർച്ച് മൂവീസിൽ](https://t.me/MarchMoviesGroup) മാത്രമേ വർക് ആകു. എന്തായാലും ഇവിടം വരെ വന്നതല്ലേ ഞങ്ങളുടെ ചാനലിൽ ജോയിൻ ആയില്ലെങ്കിൽ ജോയിൻ ആയിക്കോ."""
+ഹലോ മച്ചാനെ ഞാൻ 
+മാർച്ച് മൂവീസിൽ മാത്രമേ വർക് ആകു. എന്തായാലും ഇവിടം വരെ വന്നതല്ലേ ഞങ്ങളുടെ ചാനലിൽ ജോയിൻ ആയില്ലെങ്കിൽ ജോയിൻ ആയിക്കോ."""
