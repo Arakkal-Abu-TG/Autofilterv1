@@ -134,19 +134,31 @@ async def group(client, message):
             LuciferMoringstar=await client.send_message(
             chat_id = message.chat.id,
             text=f"""
-👋Hey {message.from_user.mention}
-If this movie is not in our database you will not get that movie.
-Otherwise, the spelling of the name of the requested movie may not be correct.
-So you go to google and check the spelling of the name of the movie you want.
-If you do not receive the movie even after entering the correct name.
-@admin type movie name Inform the admin in this format.
-We will upload within 24 hours as we can.
-ഈ സിനിമ ഞങ്ങളുടെ ഡാറ്റാബേസിൽ ഇല്ലെങ്കിൽ നിങ്ങൾക്ക് ഈ സിനിമ ലഭിക്കില്ല.
-അല്ലെങ്കിൽ, അഭ്യർത്ഥിച്ച സിനിമയുടെ പേരിന്റെ അക്ഷരവിന്യാസം ശരിയായിരിക്കില്ല.
-അതിനാൽ നിങ്ങൾ ഗൂഗിളിൽ പോയി നിങ്ങൾക്ക് ആവശ്യമുള്ള സിനിമയുടെ പേരിന്റെ സ്പെല്ലിംഗ് പരിശോധിക്കുക.
-ശരിയായ പേര് നൽകിയിട്ടും നിങ്ങൾക്ക് സിനിമ ലഭിക്കുന്നില്ലെങ്കിൽ.
-@admin ടൈപ്പ് മൂവി നാമം ഈ ഫോർമാറ്റിൽ അഡ്മിനെ അറിയിക്കുക.
-ഞങ്ങൾ 24 മണിക്കൂറിനുള്ളിൽ അപ്‌ലോഡ് ചെയ്യാൻ ശ്രമിക്കും""",
+👋Hey {message.from_user.mention}/n/n Sorry, No Movie/Series Related to the Given Word Was Found 🥺
+
+Possible Causes : 🤔
+
+• Not released yet🚫.
+
+•  Incorrect Spelling🖋️.
+
+• Unwanted texts in Msgs⛔.
+
+• Asking theatre prints❗.
+
+• Not in my Database⁉️.
+
+<a href="https://www.google.com">•Search In Google🔎</a>
+
+<a href="https://t.me/imdb">Search in IMDB🔎</a>
+
+•If you don't get the movie that you request mention admin this like 👉 @admins.
+
+•We will upload it soon as we can.
+
+
+
+
               parse_mode="html",
               reply_to_message_id=message.message_id
            )
