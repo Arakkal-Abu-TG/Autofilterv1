@@ -154,7 +154,7 @@ Possible Causes : 🤔
 
 •If you don't get the movie that you request mention admin this like 👉 @admins.
 
-•We will upload it soon as we can.
+•We will upload it soon as we can.""",
 
 
 
