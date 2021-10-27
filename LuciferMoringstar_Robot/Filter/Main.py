@@ -44,7 +44,7 @@ async def filter(client, message):
             await client.send_message(
                 chat_id=message.from_user.id,
                 text="Something went Wrong.",
-                parse_mode="markdown",
+                parse_mode="HTML",
                 disable_web_page_preview=True
             )
             return
